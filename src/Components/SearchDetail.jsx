@@ -9,6 +9,7 @@ const SearchDetail = () => {
   const {searchTerm} = useParams();
   useEffect(() => {
     fetchFromAPI(`search?part=snippet&q=${searchTerm}`).then((data) => {
+      console.log(data.data.items);
       setVideos(data.data.items);
     })
   }, [searchTerm])

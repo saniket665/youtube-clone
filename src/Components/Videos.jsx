@@ -8,9 +8,14 @@ const Videos = ({videos}) => {
     <Stack direction="row" sx={{flexWrap: "wrap", justifyContent: "center", overFlowX: "auto", gap: "1rem", margin: "1rem 0"}}>
         {
             videos !== null && videos.map((video, idx) => (
-                <Box key={idx}>
-                    <Video video={video} />
-                </Box>
+                <>
+                {
+                    video?.id?.kind?.includes("channel") ? <></> :  
+                    <Box key={idx}>
+                        <Video video={video} />
+                    </Box>
+                }
+                </>
             ))
         }
     </Stack>
