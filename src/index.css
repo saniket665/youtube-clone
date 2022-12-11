@@ -61,6 +61,7 @@ a {
   border:none;
   outline:none;
   width:350px;
+  margin-left: 3rem;
 }
 .sidebar::-webkit-scrollbar {
   display: none;
@@ -84,6 +85,25 @@ a {
 .cat-icon {
   display: inline;
 }
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 1.3rem;
+  margin-right: 3rem;
+}
+.error-message {
+  padding: 8px 2px;
+  background: #fd6868;
+  border-radius: 0.25rem;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+}
+
+
 
 @media screen and (max-width: 900px) {
   .sidebar-cont {
